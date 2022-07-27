@@ -5,7 +5,7 @@ clear all
 % webpage https://ccmc.gsfc.nasa.gov/
 
 % Format of the NRLMSISE-00 file:
-% 1) Height range 79:1:1000 km;
+% 1) Altitude range 79:1:1000 km;
 % 2) Required fields (select when prepare the MSISE output at CCMC) are specified 
 % below in the NPUT section. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
