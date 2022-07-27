@@ -50,7 +50,7 @@ p1_ASPAM = tab_ASPAM(:,4) ;
 p2_ASPAM = tab_ASPAM(:,5) ;
 p3_ASPAM = tab_ASPAM(:,6) ;
 
-% -- photon flux on the top of atmosphere --
+% -- photon flux at the top of atmosphere --
 Itop_UV = p1_ASPAM(1:end-1).*F107^2 + p2_ASPAM(1:end-1).*F107 + p3_ASPAM(1:end-1) ; 
 Itop_La = p1_ASPAM(end).*F107^2 + p2_ASPAM(end).*F107 + p3_ASPAM(end) ;  % Ly-alpha flux
 %--------------------------------------------------------------------------
