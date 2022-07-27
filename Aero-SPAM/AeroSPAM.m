@@ -1,6 +1,6 @@
 clear all
 % The Aero-SPAM model reconstructs the shortwave photon flux I, 1/(m^2*s*nm)  
-% on the top of the Earth's atmosphere depending on the solar radio emission 
+% at the top of the Earth's atmosphere depending on the solar radio emission 
 % flux F10.7.
 %
 % The Aero-SPAM model was developed by Vera Nikolaeva and Evgeny Gordeev
@@ -26,7 +26,7 @@ p1_ASPAM = tab_ASPAM(:,4) ;
 p2_ASPAM = tab_ASPAM(:,5) ;
 p3_ASPAM = tab_ASPAM(:,6) ;
 
-% -- photon flux on the top of atmosphere --
+% -- photon flux at the top of atmosphere --
 Itop = p1_ASPAM.*F107^2 + p2_ASPAM.*F107 + p3_ASPAM ; 
 %--------------------------------------------------------------------------
 
