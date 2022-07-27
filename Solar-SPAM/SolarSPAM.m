@@ -1,6 +1,6 @@
 clear all
 % The Solar-SPAM model reconstructs the solar irradiance spectrum  F, W/(m^2*nm)  
-% in the 0-190 nm wavelength range on the top of the Earth's atmosphere  
+% in the 0-190 nm wavelength range at the top of the Earth's atmosphere  
 % depending on the solar radio emission flux F10.7.
 %
 % The Solar-SPAM model was developed by Vera Nikolaeva and Evgeny Gordeev
@@ -23,7 +23,7 @@ p1_SSPAM = tab_SSPAM(:,2) ;
 p2_SSPAM = tab_SSPAM(:,3) ;
 p3_SSPAM = tab_SSPAM(:,4) ;
 
-% -- photon energy flux on the top of atmosphere --
+% -- photon energy flux at the top of atmosphere --
 Ftop = p1_SSPAM.*F107^2 + p2_SSPAM.*F107 + p3_SSPAM ; 
 %--------------------------------------------------------------------------
 
