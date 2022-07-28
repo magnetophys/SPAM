@@ -1,6 +1,6 @@
-% TIMED spectrum model = based on TIMED data 22.01.2002-31.12.2016 :  
-% I(f) = p1*f^2 + p2*f + p3 
-% I - energy flux,  [W m^-2 nm^-1]
+% The Solar-SPAM model = based on TIMED SEE data from 22.01.2002 to 24.11.2016 :  
+% F(f) = p1*f^2 + p2*f + p3 
+% F - photon energy flux,  [W m^-2 nm^-1]
 % f == f107 - measured solar radio flux at 10.7 cm,  [10^-22 W m^-2]
 
 %lambda  p1              p2              p3              CC    RMSE            I_aver           std         
