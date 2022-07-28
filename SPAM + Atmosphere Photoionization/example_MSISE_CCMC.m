@@ -35,15 +35,15 @@ nH_msis = msis(:,14) .*1e+6 ;    % Hydrogen H
 nN_msis = msis(:,15) .*1e+6 ;    % Nitrogen N
 F107 = msis(1,16) ;              % F10.7 (daily)
 
-% -- NO empirical concentration by [Mirta, ...] --
-nNO_mirta = 0.4*exp(-3700./T_msis).*nO2_msis + 5*1e-7*nO_msis ;  
+% -- NO empirical concentration [Mitra, 1968] --
+nNO_mitra = 0.4*exp(-3700./T_msis).*nO2_msis + 5*1e-7*nO_msis ;  
 
 % -- combined Input --
 INPUT.alts = alts ;      INPUT.Year = Year ;        INPUT.Mon = Mon ;        INPUT.Day = Day ;
 INPUT.Hour = Hour ;      INPUT.alt_msis = alt_msis ;    INPUT.GLat = GLat ;       INPUT.GLon = GLon ;
 INPUT.nO_msis = nO_msis ;   INPUT.nN2_msis = nN2_msis ;   INPUT.nO2_msis = nO2_msis ;  INPUT.T_msis = T_msis ;
 INPUT.nHe_msis = nHe_msis ; INPUT.nAr_msis = nAr_msis ;   INPUT.nH_msis = nH_msis ;   INPUT.nN_msis = nN_msis ;
-INPUT.F107 = F107 ;     INPUT.nNO_mirta = nNO_mirta ;
+INPUT.F107 = F107 ;     INPUT.nNO_mitra = nNO_mitra ;
 % -------------------------------------------------------------------------
 
 

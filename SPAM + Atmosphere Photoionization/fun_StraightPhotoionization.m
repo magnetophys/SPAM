@@ -31,8 +31,8 @@ nH_msis = INPUT.nH_msis ;
 nN_msis = INPUT.nN_msis ;
 F107 = INPUT.F107 ;
 
-% -- NO empirical concentration by [Mirta, ...] --
-nNO_mirta = INPUT.nNO_mirta ;  
+% -- NO empirical concentration by [Mitra, 1968] --
+nNO_mitra = INPUT.nNO_mitra ;  
 % -------------------------------------------------------------------------
 
 
@@ -83,7 +83,7 @@ SZA = 90-asind( sind(GLat)*sind(declin) + cosd(GLat)*cosd(declin)*cosd(sha)) ; %
 Chap = zeros(size(alt_msis)) ;  % Chapman Function
 for k = 1:length(alt_msis) 
     MolWeights = [4.0026, 15.9994, 28.0134, 31.9988, 39.948, 1.00797, 14.0067, 30.0061] ;  % Molecular Weights [g/mol]
-    NeutralsDens = [nHe_msis(k), nO_msis(k), nN2_msis(k), nO2_msis(k), nAr_msis(k), nH_msis(k), nN_msis(k), nNO_mirta(k)] ;  % concentration of neutrals 
+    NeutralsDens = [nHe_msis(k), nO_msis(k), nN2_msis(k), nO2_msis(k), nAr_msis(k), nH_msis(k), nN_msis(k), nNO_mitra(k)] ;  % concentration of neutrals 
     sma = sum(NeutralsDens.*MolWeights)/sum(NeutralsDens) ; % specific mass of the air [g/mol]
     grav = 9.780327*(1+0.0053024*sind(GLat)^2-0.0000058*sind(2*GLat)^2)-3.086*1e-6*alt_msis(k) ; % gravitational acceleration
     ScH = (kB*T_msis(k))/(sma*amu*grav) ;  % scale height
@@ -110,7 +110,7 @@ for ka = 1:length(alts)
     nN2 = nN2_msis(f) ;
     nO2 = nO2_msis(f) ;
     nN = nN_msis(f) ;
-    nNO = nNO_mirta(f) ;
+    nNO = nNO_mitra(f) ;
     Talt = T_msis(f) ;   % Atm temp at altititude
 
     % -- Height integrated concentration --
@@ -119,7 +119,7 @@ for ka = 1:length(alts)
     integr_nO2 = sum(Chap(f).*nO2_msis(f).*(alt_msis(f)-alt_msis(f-1)).*1e3) ;
     integr_nN2 = sum(Chap(f).*nN2_msis(f).*(alt_msis(f)-alt_msis(f-1)).*1e3) ;
     integr_nN = sum(Chap(f).*nN_msis(f).*(alt_msis(f)-alt_msis(f-1)).*1e3) ;
-    integr_nNO = sum(Chap(f).*nNO_mirta(f).*(alt_msis(f)-alt_msis(f-1)).*1e3) ;
+    integr_nNO = sum(Chap(f).*nNO_mitra(f).*(alt_msis(f)-alt_msis(f-1)).*1e3) ;
     clear f ;
 
     % -- photoionization rates, m-3s-1 --
