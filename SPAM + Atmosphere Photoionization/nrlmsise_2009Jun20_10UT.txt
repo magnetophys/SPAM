@@ -7,7 +7,7 @@
 %Prof. parameters: Start=    79.00 Stop=  1000.00 Step=     1.00
 %
 %Optional input parameters:
-%Sunspot number(Rz12) =65.
+%F10.7(daily) = 65. - according to OMNIweb Plus database (https://omniweb.gsfc.nasa.gov/ow.html). 
 %
 %Selected output parameters:
 %1  Year

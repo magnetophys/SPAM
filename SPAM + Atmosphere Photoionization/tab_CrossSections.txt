@@ -1,6 +1,8 @@
-% Description
+% Absorption (_a) and ionization (_i) cross-sections for neutrals O, N, O2, N2, and NO and probabilities of the
+% ionization to the electronic states of atomic oxygen ions O+(4S), O+(2D), and O+(2P). 
+% See details in [Nikolaeva et al., 2021, https://doi.org/10.3390/atmos12060748]
 
-%WL_low   WL_up      O_i	 O_a	       N_i	       N_a	      O2_i	      O2_a	      N2_i	      N2_a	      NO_i	  NO_a    O+(4S)   O+(2D)     O+(2P) 
+%wavelength range    O_i	 O_a	       N_i	       N_a	      O2_i	      O2_a	      N2_i	      N2_a	      NO_i	  NO_a    O+(4S)   O+(2D)     O+(2P) 
 5	    10	   1.060	 1.060	 0.380	 0.380	 1.180	 1.180	 0.600	 0.600	0.000	  0.000   0.360	 0.440	0.140  
 10	    15	   3.530	 3.530	 0.670	 0.670	 3.610	 3.610	 2.320	 2.320	0.000	  0.000   0.360	 0.410	0.195  
 15	    20	   5.960	 5.960	 2.000	 2.000	 7.270	 7.270	 5.400	 5.400	0.000	  0.000   0.330	 0.420	0.230  

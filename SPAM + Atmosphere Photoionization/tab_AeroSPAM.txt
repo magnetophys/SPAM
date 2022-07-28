@@ -1,6 +1,6 @@
-% AIM-UV model = based on TIMED data 22.01.2002-31.12.2016 :  
+% The Aero-SPAM model = based on TIMED SEE data 22.01.2002 to 24.11.2016 :  
 % I(f) = p1*f^2 + p2*f + p3
-% I - observed photon flux,  [m^-2 nm^-1]
+% I - observed photon flux,  [m^-2 s^-1 nm^-1]
 % f = f107 - measured solar radio flux at 10.7 cm,  [10^-22 W m^-2]
 
 % #       range         p1              p2              p3              CC    RMSE            I_aver          std

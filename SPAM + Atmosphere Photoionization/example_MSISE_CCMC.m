@@ -16,8 +16,8 @@ clear all
 alts = 80:250 ;  % altitude range for Q calculation
 
 % -- MSIS'00 in altitude range [79:1000]km --
-% msis = load('nrlmsise_2009Jun20_10UT.txt') ;  % neutral atmosphere model(F10.7=69 sfu)
-msis = load('nrlmsise_2015Jun18_10UT.txt') ;  % neutral atmosphere model(F10.7=140 sfu)
+% msis = load('nrlmsise_2009Jun20_10UT.txt') ;  % neutral atmosphere model(F10.7=65 sfu)
+msis = load('nrlmsise_2015Jun18_10UT.txt') ;  % neutral atmosphere model(F10.7=155 sfu)
 Year = msis(1,1) ;               % Year
 Mon = msis(1,2) ;                % Month
 Day = msis(1,3) ;                % Day (of Month)
