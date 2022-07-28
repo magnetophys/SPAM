@@ -73,7 +73,7 @@ sNO_a = tab_CS(:,12) *1e-22 ;
 
 
 
-%% ----- Chapman function calculation -----
+%% ----- Chapman function [Smith and Smith, 1972] -----
 DoY = datenum(Year,Mon,Day)-datenum(Year,0,0) ; % Day of Year
 declin = -23.44*cosd((360/365)*(DoY+10)) ; % solar declination   
 lst = Hour + GLon/15 ;  % Local apparent solar time [nrmlsis-2000]
