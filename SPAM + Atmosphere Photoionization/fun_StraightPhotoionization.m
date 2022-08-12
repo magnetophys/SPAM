@@ -5,7 +5,7 @@ function [qN,qN2,qO,qO2,qNO] = fun_StraightPhotoionization(INPUT)
 %
 % More details on the photoionization calculation procedure can be found in
 % [Nikolaeva et al., Atmosphere 2021], and on the SPAM solar spectrum model in
-% [Nikolaeva & Gordeev, GMD 2022]
+% [Nikolaeva & Gordeev, Space Weather 2022]
 %
 % INPUT is a structure array containing all needed input variables
 
