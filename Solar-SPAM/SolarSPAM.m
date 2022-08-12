@@ -4,8 +4,7 @@ clear all
 % depending on the solar radio emission flux F10.7.
 %
 % The Solar-SPAM model was developed by Vera Nikolaeva and Evgeny Gordeev
-% and published in Geoscientific Model Development (GMD)
-% [Nikolaeva and Gordeev, 2022].
+% and published in Space Weather [Nikolaeva and Gordeev, 2022].
 
 
 
