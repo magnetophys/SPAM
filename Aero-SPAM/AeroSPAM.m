@@ -4,8 +4,7 @@ clear all
 % flux F10.7.
 %
 % The Aero-SPAM model was developed by Vera Nikolaeva and Evgeny Gordeev
-% and published in Geoscientific Model Development (GMD)
-% [Nikolaeva and Gordeev, 2022].
+% and published in Space Weather [Nikolaeva and Gordeev, 2022].
 %
 % Note that the visualization is performed for specific spectral channels 
 % numbered from 1 to 37, which include photon flux values in 17 spectral 
