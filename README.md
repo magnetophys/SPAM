@@ -7,7 +7,7 @@ Solar Spectrum Prediction for Applications and Modeling (SPAM) – a new empiric
 
 Related references:
 
-1/ Vera Nikolaeva and Evgeny Gordeev. SPAM: Solar Spectrum Prediction for Applications and Modeling. Space Weather 2022, under review.
+1/ Vera Nikolaeva and Evgeny Gordeev. SPAM: Solar Spectrum Prediction for Applications and Modeling. Atmosphere 2023, 14(2), 226; https://doi.org/10.3390/atmos14020226
 
 2/ Nikolaeva V., Gordeev E., Sergienko T., Makarova L., Kotikov A. AIM-E: E-Region Auroral Ionosphere Model. Atmosphere 2021, 12, 748. https://doi.org/10.3390/atmos12060748.
 
